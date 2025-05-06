@@ -17,7 +17,7 @@ def crypto_cmc_price_get(symbol, quantity):
     session = Session()
     session.headers.update(headers)
 
-    try:
+    tr:
         response = session.get(url, params=params)
         data = json.loads(response.text)
 
